@@ -33,7 +33,7 @@ public class UserUtils {
     }
 
     public User getTestUser() {
-        return userRepository.findByEmail("hexlet@example.com")
+        return userRepository.findByEmail("bjrunning@example.com")
                 .orElseThrow(() -> new RuntimeException("User doesn't exist"));
     }
 }

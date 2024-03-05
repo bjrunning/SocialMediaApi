@@ -36,7 +36,6 @@ public class User implements UserDetails, BaseEntity {
     @JsonIgnore
     private List<Post> posts = new ArrayList<>();
 
-    @Column(unique = true)
     @Email
     @ToString.Include
     private String email;
